@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
+	<head th:fragment="headerFragment">
+		<meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <meta name="description" content="" />
+	    <meta name="author" content="" />
+
+		<title th:include=":: #pageTitle">Spring MVC Application</title>
+	
+	    <!-- Bootstrap Core CSS -->
+	    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" th:href="@{resources/css/bootstrap.min.css}" />
+	
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="resources/css/custom.css"  th:href="@{resources/css/custom.css}" />
+	
+	    <!-- Custom Fonts -->
+	    <link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css" th:href="@{resources/font-awesome/css/font-awesome.min.css}"  />
+	</head>
+</html>

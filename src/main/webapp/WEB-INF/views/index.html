@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
+
+<head th:include="layout/header :: headerFragment">
+	<title id="pageTitle">Spring MVC Application</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+   	<div th:include="layout/navigation :: navigationFragment"></div>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Welcome to Spring MVC Application
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-leaf"></i> Spring MVC 4 </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform. Although the framework does not impose any specific programming model, it has become popular in the Java community as an alternative to, replacement for, or even addition to the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.</p>
+                        <a href="https://spring.io/" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-pagelines"></i> Thymeleaf </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Thymeleaf is a Java XML/XHTML/HTML5 template engine that can work both in web (Servlet-based) and non-web environments. It is better suited for serving XHTML/HTML5 at the view layer of MVC-based web applications, but it can process any XML file even in offline environments. It provides full Spring Framework integration.In web applications Thymeleaf aims to be a complete substitute for JSP, and implements the concept of Natural Templates: template files that can be directly opened in browsers and that still display correctly as web pages.Thymeleaf is Open-Source Software, licensed under the Apache License 2.0.</p>
+                        <a href="http://www.thymeleaf.org/" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-bold"></i> Bootstrap v3.2.0 </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Bootstrap is a free and open-source front-end web framework for designing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. Unlike many web frameworks, it concerns itself with front-end development only.Bootstrap is the second most-starred project on GitHub, with over 95 thousand stars and more than 40 thousand forks</p>
+                        <a href="http://getbootstrap.com/" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        <!-- Footer -->
+        <div th:include="layout/footer :: footerFragment"></div>
+        
+    </div>
+    <!-- /.container -->
+</body>
+
+</html>
